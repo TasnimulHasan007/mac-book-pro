@@ -5,6 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Mac Book Pro!</title>
+        <!-- Animate -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
         <!-- Stylesheet -->
         <link rel="stylesheet" href="./stylesheet/style.css" />
     </head>
@@ -14,6 +19,7 @@
                 <!-- Display Image -->
                 <div class="image-container">
                     <img
+                        class="animate__animated animate__fadeInUp"
                         src="./images/mac.png"
                         alt="Picture of an Apple iMac"
                     />
@@ -21,11 +27,11 @@
                 <!-- Product Details -->
                 <div class="details">
                     <!-- Product Title -->
-                    <h2>
+                    <h2 class="animate__animated animate__fadeInUp">
                         Customize your Blue 24-inch iMac with Apple M1 chip.
                     </h2>
                     <!-- Product Description -->
-                    <p>
+                    <p class="animate__animated animate__fadeInUp">
                         Apple M1 chip with 8-core CPU with 4 performance cores
                         and 4 efficiency cores , 7-core GPU, and 16-core Neutral
                         Engine 8GB unified memory, 256GB SSD storage, Two
@@ -35,7 +41,7 @@
                     <!-- Product Configuration -->
                     <div class="config">
                         <!-- Memory Configuration -->
-                        <div class="memory">
+                        <div class="animate__animated animate__fadeInUp memory">
                             <h3>Memory</h3>
                             <button data-memory class="active" id="8gb-memory">
                                 8GB unified Memory
@@ -45,7 +51,10 @@
                             </button>
                         </div>
                         <!-- Storage Configuration -->
-                        <div id="storage">
+                        <div
+                            id="storage"
+                            class="animate__animated animate__fadeInUp"
+                        >
                             <h3>Storage</h3>
                             <button
                                 data-storage
@@ -62,7 +71,10 @@
                             </button>
                         </div>
                         <!-- Shipping Charge -->
-                        <div id="shipping">
+                        <div
+                            id="shipping"
+                            class="animate__animated animate__fadeInUp"
+                        >
                             <h3>Choose your delivery option</h3>
                             <button data-shipping class="active" id="free">
                                 Friday, AUG 25 FREE Prime Delivery
@@ -73,7 +85,7 @@
                         </div>
                     </div>
                     <!-- Pricing Table -->
-                    <div class="pricing">
+                    <div class="pricing animate__animated animate__fadeInUp">
                         <!-- Best Price -->
                         <div>
                             <h3>Best Price</h3>
@@ -101,7 +113,7 @@
                         </div>
                     </div>
                     <!-- Promo Code Field -->
-                    <div class="promo">
+                    <div class="promo animate__animated animate__fadeInUp">
                         <h4>Add Promo Code</h4>
                         <div>
                             <input id="promo-code" type="text" />
@@ -109,7 +121,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="grand-total">
+                <div class="grand-total animate__animated animate__fadeInLeft">
                     <h2>Total: $<span id="grand-total">1299</span></h2>
                 </div>
             </section>

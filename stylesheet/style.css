@@ -59,9 +59,26 @@ button {
     padding: 0 1.5rem;
 }
 
+.details h2 {
+    animation-delay: 0.2s;
+}
+.details p {
+    animation-delay: 0.3s;
+}
+
 /* Product Configuration */
 .config {
     padding: 2.5rem 0;
+}
+
+.config > div:first-child {
+    animation-delay: 0.4s;
+}
+.config > div:nth-child(2) {
+    animation-delay: 0.5s;
+}
+.config > div:last-child {
+    animation-delay: 0.6s;
 }
 
 .config > div:not(:last-child) {
@@ -96,6 +113,7 @@ button {
 /* Pricing */
 .pricing {
     margin-bottom: 1rem;
+    animation-delay: 0.7s;
 }
 
 .pricing > div {
@@ -108,6 +126,10 @@ button {
 
 .pricing > div:last-child {
     border-top: 2px solid black;
+}
+
+.promo {
+    animation-delay: 0.9s;
 }
 
 .promo > div {
@@ -156,21 +178,22 @@ button {
 
 .success {
     background-color: #4ac860;
-    bottom: -50px;
+    bottom: -500px;
 }
 
 .danger {
     background-color: #dc3545;
-    bottom: -50px;
+    bottom: -500px;
 }
 
 .warning {
     background-color: #f7c600;
-    bottom: -50px;
+    bottom: -500px;
 }
 
 /* grand-total */
 .grand-total {
+    animation-delay: 1s;
     border-top: 1px solid #e4e4e4;
     grid-column: 1 / -1;
     text-align: center;

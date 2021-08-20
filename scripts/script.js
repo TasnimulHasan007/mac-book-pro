@@ -65,19 +65,19 @@ function checkPromo(coupon) {
         // show success message
         promoSuccess.style.bottom = "0";
         setTimeout(function () {
-            promoSuccess.style.bottom = "-50px";
+            promoSuccess.style.bottom = "-500px";
         }, 1000);
     } else if (couponMatched == true) {
         // show warning message
         promoWarning.style.bottom = "0";
         setTimeout(function () {
-            promoWarning.style.bottom = "-50px";
+            promoWarning.style.bottom = "-500px";
         }, 2000);
     } else {
         // show danger message
         promoDanger.style.bottom = "0";
         setTimeout(function () {
-            promoDanger.style.bottom = "-50px";
+            promoDanger.style.bottom = "-500px";
         }, 1000);
     }
     coupon.value = "";
