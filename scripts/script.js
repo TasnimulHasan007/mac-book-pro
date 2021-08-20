@@ -27,8 +27,6 @@ const promoSuccess = document.getElementById("message-success");
 const promoDanger = document.getElementById("message-danger");
 const promoWarning = document.getElementById("message-warning");
 
-//Coupon Validation
-var couponMatched = false;
 // functions
 
 // Show the Extra costs for addtional config
@@ -56,6 +54,8 @@ function updateTotal() {
         grandTotal.innerText = totalCost.innerText;
     }
 }
+//Coupon Validation
+var couponMatched = false;
 // Coupon Checker
 function checkPromo(coupon) {
     if (coupon.value == "stevekaku" && couponMatched == false) {
@@ -125,3 +125,32 @@ express.addEventListener("click", function () {
 promoApplyButton.addEventListener("click", function () {
     checkPromo(promoInput);
 });
+
+// Active toggle function
+function activeToggler(activeButtons) {
+    button.addEventListener("click", function () {
+        for (btn of activeButtons) {
+            btn.classList.remove("active");
+        }
+        this.classList.add("active");
+    });
+}
+
+// Active button toggle
+const memoryButtons = document.querySelectorAll("[data-memory]");
+
+for (button of memoryButtons) {
+    activeToggler(memoryButtons);
+}
+
+const storageButtons = document.querySelectorAll("[data-storage]");
+
+for (button of storageButtons) {
+    activeToggler(storageButtons);
+}
+
+const shippingButtons = document.querySelectorAll("[data-shipping]");
+
+for (button of shippingButtons) {
+    activeToggler(shippingButtons);
+}

@@ -81,7 +81,14 @@ button {
 }
 
 .config button:hover {
-    background-color: #293045;
+    background-color: #7aaaf8;
+    border-color: #7aaaf8;
+    color: white;
+}
+
+.config .active {
+    background-color: #4c89e9;
+    border-color: #4c89e9;
     color: white;
 }
 
@@ -118,7 +125,7 @@ button {
 
 .promo button {
     width: 80px;
-    background-color: #dc3545;
+    background-color: #4c89e9;
     color: white;
     padding: 0.6rem;
     font-size: 1.2rem;
@@ -130,7 +137,7 @@ button {
 }
 
 .promo button:hover {
-    background-color: #e45967;
+    background-color: #7aaaf8;
 }
 
 /* Promo Message */

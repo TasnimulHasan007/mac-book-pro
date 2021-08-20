@@ -37,29 +37,37 @@
                         <!-- Memory Configuration -->
                         <div class="memory">
                             <h3>Memory</h3>
-                            <button id="8gb-memory">8GB unified Memory</button>
-                            <button id="16gb-memory">
+                            <button data-memory class="active" id="8gb-memory">
+                                8GB unified Memory
+                            </button>
+                            <button data-memory id="16gb-memory">
                                 16GB unified Memory
                             </button>
                         </div>
                         <!-- Storage Configuration -->
                         <div id="storage">
                             <h3>Storage</h3>
-                            <button id="256gb-storage">
+                            <button
+                                data-storage
+                                class="active"
+                                id="256gb-storage"
+                            >
                                 256GB SSD Storage
                             </button>
-                            <button id="512gb-storage">
+                            <button data-storage id="512gb-storage">
                                 512GB SSD Storage
                             </button>
-                            <button id="1tb-storage">1TB SSD Storage</button>
+                            <button data-storage id="1tb-storage">
+                                1TB SSD Storage
+                            </button>
                         </div>
                         <!-- Shipping Charge -->
                         <div id="shipping">
                             <h3>Choose your delivery option</h3>
-                            <button id="free">
+                            <button data-shipping class="active" id="free">
                                 Friday, AUG 25 FREE Prime Delivery
                             </button>
-                            <button id="express">
+                            <button data-shipping id="express">
                                 Friday, AUG 21 Delivery Charge $20
                             </button>
                         </div>
