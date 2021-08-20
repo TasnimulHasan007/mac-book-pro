@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mac Book Pro!</title>
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="./stylesheet/style.css" />
+    </head>
+    <body>
+        <main>
+            <section class="container">
+                <!-- Display Image -->
+                <div class="image-container">
+                    <img
+                        src="./images/mac.png"
+                        alt="Picture of an Apple iMac"
+                    />
+                </div>
+                <!-- Product Details -->
+                <div class="details">
+                    <!-- Product Title -->
+                    <h2>
+                        Customize your Blue 24-inch iMac with Apple M1 chip.
+                    </h2>
+                    <!-- Product Description -->
+                    <p>
+                        Apple M1 chip with 8-core CPU with 4 performance cores
+                        and 4 efficiency cores , 7-core GPU, and 16-core Neutral
+                        Engine 8GB unified memory, 256GB SSD storage, Two
+                        Thuderbolt / USB 4 ports, Magic Mouse, Magic Keyboard -
+                        US English.
+                    </p>
+                    <!-- Product Configuration -->
+                    <div class="config">
+                        <!-- Memory Configuration -->
+                        <div class="memory">
+                            <h3>Memory</h3>
+                            <button id="8gb-memory">8GB unified Memory</button>
+                            <button id="16gb-memory">
+                                16GB unified Memory
+                            </button>
+                        </div>
+                        <!-- Storage Configuration -->
+                        <div id="storage">
+                            <h3>Storage</h3>
+                            <button id="256gb-storage">
+                                256GB SSD Storage
+                            </button>
+                            <button id="515gb-storage">
+                                515GB SSD Storage
+                            </button>
+                            <button id="1tb-storage">1TB SSD Storage</button>
+                        </div>
+                        <!-- Shipping Charge -->
+                        <div id="shipping">
+                            <h3>Choose your delivery option</h3>
+                            <button id="free">
+                                Friday, AUG 25 FREE Prime Delivery
+                            </button>
+                            <button id="express">
+                                Friday, AUG 21 Delivery Charge $20
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Pricing Table -->
+                    <div class="pricing">
+                        <!-- Best Price -->
+                        <div>
+                            <h3>Best Price</h3>
+                            <h3>$<span id="best-price">1299</span></h3>
+                        </div>
+                        <!-- Extra Memory Cost -->
+                        <div>
+                            <h3>Extra Memory Cost</h3>
+                            <h3>$<span id="memory-cost">0</span></h3>
+                        </div>
+                        <!-- Extra Storage Cost -->
+                        <div>
+                            <h3>Extra Storage Cost</h3>
+                            <h3>$<span id="storage-cost">0</span></h3>
+                        </div>
+                        <!-- Shipping Cost -->
+                        <div>
+                            <h3>Delivery Charge</h3>
+                            <h3>$<span id="shipping-cost">0</span></h3>
+                        </div>
+                        <!-- Total Price -->
+                        <div>
+                            <h3>Total Price</h3>
+                            <h3>$<span id="shipping-cost">1299</span></h3>
+                        </div>
+                    </div>
+                    <!-- Promo Code Field -->
+                    <div class="promo">
+                        <h4>Add Promo Code</h4>
+                        <div>
+                            <input id="promo-code" type="text" />
+                            <button id="promo-apply">Apply</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grand-total">
+                    <h2>Total: $<span id="grand-total">1299</span></h2>
+                </div>
+            </section>
+        </main>
+        <!-- Javascript -->
+        <script src="./scripts/script.js"></script>
+    </body>
+</html>
